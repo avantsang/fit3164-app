@@ -14,9 +14,9 @@ add_logo("assets/team_logo.png", height=0)
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-import statistics
-import time
-import math
+#import statistics
+#import time
+#import math
 
 #--------------------------------------------------------------------------#
 
@@ -294,7 +294,7 @@ def main():
             past_selected_volumes.append(sales)
         
         # Let our base demand be the average of the prior years' volumes at that month
-        base_demand = round(statistics.mean(past_selected_volumes),2)
+        base_demand = round(np.mean(past_selected_volumes),2)
 
 
         

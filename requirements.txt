@@ -1,8 +1,2 @@
 streamlit_extras
-streamlit
-pandas
-numpy
-statistics
-time
-math
 statsmodels.api
