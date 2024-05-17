@@ -1,4 +1,4 @@
-streamlit_extras.app_logo
+streamlit_extras
 streamlit
 pandas
 numpy

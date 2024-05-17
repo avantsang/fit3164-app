@@ -3,6 +3,8 @@
 # base streamlit framework
 import streamlit as st
 
+import streamlit_extras
+
 # extra third-party streamlit component - sidebar logo
 from streamlit_extras.app_logo import add_logo
 
