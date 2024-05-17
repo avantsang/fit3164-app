@@ -18,7 +18,12 @@ import matplotlib.pyplot as plt
 # import statistics
 #import time
 #import math
-import statsmodels.api as sm
+import statsmodels as sm
+
+from statsmodels.regression.linear_model import OLS
+import statsmodels.regression.linear_model as lm
+
+from statsmodels.tools.tools import add_constant
 
 #--------------------------------------------------------------------------#
 
@@ -121,9 +126,9 @@ def main():
 
     # Fit linear regression model
     x = filtered_data['sell_price']
-    x = sm.add_constant(x)  # Add a constant term for the intercept
+    x = add_constant(x)  # Add a constant term for the intercept
     y = filtered_data['sales']
-    result = sm.OLS(y, x).fit()
+    result = OLS(y, x).fit()
 
     # Get elasticity from the regression model
     intercept, slope = result.params
