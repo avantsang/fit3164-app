@@ -1,0 +1,7 @@
+streamlit
+pandas
+numpy
+statistics
+time
+math
+statsmodels.api
